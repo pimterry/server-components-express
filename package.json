@@ -1,0 +1,54 @@
+{
+  "name": "server-components-express",
+  "version": "0.1.0",
+  "description": "Express integration plugin for server components",
+  "main": "index.js",
+  "scripts": {
+    "lint": "jshint . --exclude='node_modules' || exit 1",
+    "test": "npm run lint && mocha test/ --recursive",
+    "dev": "watch 'npm run test -s' src/ test/",
+    "release:patch": "np patch",
+    "release:minor": "np minor",
+    "release:major": "np major"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pimterry/server-components-express.git"
+  },
+  "keywords": [
+    "server-components",
+    "express",
+    "middleware",
+    "express-middleware",
+    "web-components",
+    "plugin"
+  ],
+  "author": "Tim Perry <pimterry@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pimterry/server-components-express/issues"
+  },
+  "homepage": "https://github.com/pimterry/server-components-express#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
+    "jshint": "^2.9.2",
+    "mocha": "^2.5.3",
+    "np": "^2.6.0",
+    "watch": "^0.19.1"
+  },
+  "peerDependencies": {
+    "express": "^4.0.0",
+    "server-components": "^0.2.1",
+    "server-components-static": "^0.3.0"
+  },
+  "dependencies": {
+    "express": "^4.0.0",
+    "server-components": "^0.2.1",
+    "server-components-static": "^0.3.0"
+  },
+  "jshintConfig": {
+    "esversion": 6,
+    "node": true
+  }
+}
