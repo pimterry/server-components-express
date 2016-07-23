@@ -2,7 +2,7 @@
   "name": "server-components-express",
   "version": "0.1.0",
   "description": "Express integration plugin for server components",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "lint": "jshint . --exclude='node_modules' || exit 1",
     "test": "npm run lint && mocha test/ --recursive",
